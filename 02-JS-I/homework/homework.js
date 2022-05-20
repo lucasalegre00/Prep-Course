@@ -45,7 +45,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var res = y - x;
+  var res = x - y;
   return res;
   
 }
@@ -82,7 +82,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (length.str1===length.str2){
+  if (str1.length===str2.length){
     return true;
   }
   return false;
@@ -142,14 +142,14 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var cuad= math.pow(num,2);
+  var cuad= Math.pow(num,2);
   return cuad;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var cub= math.pow(num,3);
+  var cub= Math.pow(num,3);
   return cub;
   
 }
@@ -157,14 +157,14 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var expo= math.pow(num,exponent);
+  var expo= Math.pow(num,exponent);
   return expo;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var masp= math.round(num);
+  var masp= Math.round(num);
   return masp;
   
 }
@@ -172,7 +172,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var masa= math.ceil(num);
+  var masa= Math.ceil(num);
   return masa;
   
 }
@@ -180,7 +180,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+  return Math.random();
   
 }
 
@@ -218,7 +218,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola"+ " " +nombre+ "!";
+  return "Hola"+ " " +nombre+ "!";
   
 }
 
@@ -264,13 +264,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra=a,e,i,o,u){
-    return "es vocal";
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";
   }
-  else if (lenght.letra>1){
-    return "dato incorrecto";
+  else if (letra.length>1){
+    return "Dato incorrecto";
   }
-  return "dato incorrecto";
+  return "Dato incorrecto";
   
 }
 
